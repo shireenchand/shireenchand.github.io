@@ -1,0 +1,23 @@
+User-agent: *
+
+Disallow: /work/
+
+Disallow: /categories/
+
+Disallow: /categories/css/
+
+Disallow: /
+
+Disallow: /categories/javascript/
+
+Disallow: /open-source/
+
+Disallow: /projects/
+
+Disallow: /research/
+
+Disallow: /tags/
+
+Disallow: /categories/uncategories/
+
+Disallow: /writings/

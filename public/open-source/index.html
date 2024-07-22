@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US" class="scroll-smooth dark">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Open Source and Community Involvement</title>
+<meta
+  name="description"
+  content="Talks Google Cloud Community Day
+Spoke about depth estimation using computer vision. C&#43;&#43; Essentials
+Conducted a 6-hour hands-on workshop on C&#43;&#43; fundamentals for undergraduate students."
+/>
+<link rel="canonical" href="http://localhost:1313/open-source/" />
+<link rel="robots" href="/robots.txt" />
+
+<link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+
+
+
+<script
+  defer
+  src="https://www.googletagmanager.com/gtag/js?id=G-KR8P2WRM0C"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-KR8P2WRM0C');
+</script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+
+<link rel="stylesheet" href="http://localhost:1313/css/app.css" /></head>
+
+  <body class="max-w-screen-md mx-auto">
+    <div class="header">
+      <header class="flex flex-col sm:flex-row items-center gap-5 sm:gap-10 pt-16 py-12">
+   
+
+
+<div class="flex-none w-20 h-20 rounded-full overflow-hidden">
+  <a href="http://localhost:1313/">
+    <img
+      srcset="/img/profile_hu06c4d4eebab20126591c0fbffd5553a2_156084_80x80_fill_q90_box_smart1.jpg 80w"
+      src="/img/profile.jpg"
+      width="768"
+      height="747"
+      alt="Shireen Chand"
+    />
+  </a>
+</div>
+
+  
+  <div class="flex flex-col gap-5">
+    <a href="http://localhost:1313/">
+  <h1 id="site-title">Shireen Chand</h1>
+</a>
+ 
+    <nav>
+  <ul>
+     
+    
+    <li>
+      <a href="/" class="">
+        Home
+      </a>
+    </li>
+    
+    <li>
+      <a href="/research" class="">
+        Research
+      </a>
+    </li>
+    
+    <li>
+      <a href="/writings" class="">
+        Writings
+      </a>
+    </li>
+    
+    <li>
+      <a href="/projects" class="">
+        Projects
+      </a>
+    </li>
+    
+    <li>
+      <a href="/open-source" class=" active ">
+        Open Source
+      </a>
+    </li>
+    
+    <li>
+      <a href="/work" class="">
+        Work Ex
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://drive.google.com/file/d/1wQClpIH2CDaEqxStm49dOZOGmAxOnmeH/view?usp=sharing" class="">
+        Resume
+      </a>
+    </li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+      <button class="toggle-theme" aria-label="Toggle Theme" title="Toggle Theme" onclick="toggleTheme()">
+  <span class="theme-icon light"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+</svg> </span>
+  <span class="theme-icon dark"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+</svg> </span>
+</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const theme = localStorage.getItem('theme');
+
+    if (!theme || theme === 'light') {
+      setTheme('light');
+    } else {
+      setTheme(theme);
+    }
+  });
+
+  function setTheme(theme) {
+    const html = document.querySelector('html');
+    localStorage.setItem('theme', theme);
+
+    if (theme === 'light') {
+      if (html.classList.contains('dark')) {
+        document.querySelector('html').classList.remove('dark');
+      }
+
+      document.querySelector('.theme-icon.light').style.display = 'none';
+      document.querySelector('.theme-icon.dark').style.display = 'block';
+    } else {
+      if (!html.classList.contains('dark')) {
+        document.querySelector('html').classList.add('dark');
+      }
+
+      document.querySelector('.theme-icon.dark').style.display = 'none';
+      document.querySelector('.theme-icon.light').style.display = 'block';
+    }
+  }
+
+  function toggleTheme() {
+    const theme = localStorage.getItem('theme');
+
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  }
+</script>
+    </div>
+  
+    <main id="content">
+
+
+
+
+<div class="flex flex-col gap-1">
+  <h1 class="text-2xl font-extrabold">
+    
+      Open Source and Community Involvement
+      
+    </h1>
+  
+  
+    <h2 id="talks">Talks</h2>
+<ol>
+<li>
+<p><strong>Google Cloud Community Day</strong></p>
+<ul>
+<li>Spoke about depth estimation using computer vision.</li>
+</ul>
+</li>
+<li>
+<p><strong>C++ Essentials</strong></p>
+<ul>
+<li>Conducted a 6-hour hands-on workshop on C++ fundamentals for undergraduate students.</li>
+</ul>
+</li>
+<li>
+<p><strong>Multimodal LLM Deployment</strong></p>
+<ul>
+<li>Conducted a workshop on fine-tuning multimodal LLMs and deploying them using MLflow.</li>
+</ul>
+</li>
+</ol>
+<h2 id="open-source-work">Open Source Work</h2>
+<ol>
+<li>
+<p><strong>Google Summer of Code Contributor at UnifyAI</strong></p>
+<ul>
+<li>Implemented vision models in their Ivy framework to enable usage across multiple frameworks and libraries like PyTorch, TensorFlow, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>GirlScript Summer of Code at FaceX</strong></p>
+<ul>
+<li>Implemented various scripts related to face processing, detection, and editing.</li>
+</ul>
+</li>
+</ol>
+<h2 id="communities">Communities</h2>
+<ol>
+<li>
+<p><strong>Google Developer Students Club</strong></p>
+<ul>
+<li><strong>Role:</strong> AI/ML Lead and Secretary of Operations</li>
+<li><strong>Activities:</strong> Hosted multiple workshops, events, and speakers from around the world, including Geoffrey Hinton.</li>
+</ul>
+</li>
+<li>
+<p><strong>International Society of Automation</strong></p>
+<ul>
+<li><strong>Role:</strong> Technical Software Head</li>
+<li><strong>Project:</strong> Developed a system to place orders via WhatsApp and generate bills without human intervention, bridging the gap between local grocery stores and consumers.</li>
+</ul>
+</li>
+</ol>
+
+  
+</div>
+
+<section class="flex flex-col gap-10">
+  
+</section>
+
+
+
+
+    </main><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">
+    <div class="text-xs font-semibold text-gray-500 order-2 sm:order-1">
+  © 2024 —
+  <a href="http://localhost:1313/">Shireen Chand</a> 
+  <span class="font-normal">with</span>
+  <a
+    href="https://github.com/nixentric/Lowkey-Hugo-Theme"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Lowkey
+  </a>
+</div>
+
+    <div class="order-1 sm:order-2">
+  <ul class="flex sm:justify-end gap-5">
+    
+    
+    <li>    
+      <a href="https://x.com/shireen_chand" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </li>
+    
+    <li>    
+      <a href="mailto:%20shireen.chand3@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+    </li>
+    
+    <li>    
+      <a href="https://www.linkedin.com/in/shireen-chand/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </li>
+    
+    <li>    
+      <a href="https://medium.com/@shireenchand" target="_blank" rel="noopener noreferrer">Medium</a>
+    </li>
+    
+    <li>    
+      <a href="https://github.com/shireenchand" target="_blank" rel="noopener noreferrer">Github</a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+</footer></body>
+</html>
