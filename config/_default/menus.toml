@@ -1,0 +1,73 @@
+[[main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research"
+    weight = 2
+
+[[main]]
+    identifier = "Writings"
+    name = "Writings"
+    url = "/writings"
+    weight = 3
+
+[[main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 4
+
+[[main]]
+    identifier = "open-source"
+    name = "Open Source"
+    url = "/open-source"
+    weight = 5
+
+[[main]]
+    identifier = "work"
+    name = "Work Ex"
+    url = "/work"
+    weight = 6
+
+[[main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "https://drive.google.com/file/d/1wQClpIH2CDaEqxStm49dOZOGmAxOnmeH/view?usp=sharing"
+    weight = 7
+    
+# Social Media Configuration
+
+[[social]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://x.com/shireen_chand"
+    weight = 1
+
+[[social]]
+    identifier = "email"
+    name = "Email"
+    url = "mailto: shireen.chand3@gmail.com"
+    weight = 2
+
+[[social]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/shireen-chand/"
+    weight = 3
+
+[[social]]
+    identifier = "medium"
+    name = "Medium"
+    url = "https://medium.com/@shireenchand"
+    weight = 4
+
+[[social]]
+    identifier = "github"
+    name = "Github"
+    url = "https://github.com/shireenchand"
+    weight = 5
