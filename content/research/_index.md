@@ -18,6 +18,8 @@ status of glioma have important significance to clinical treatment and prognosis
 In the current study, we have applied several machine learning classifiers on a publicly available data set to
 classify into three tumor groups as glioblastoma, astrocytoma, and oligodendroglioma. The goal of the study was to evaluate the effectiveness of different techniques for both feature selection and classification, which can be subsequently applied on imaging data from our institute.
 
+Our work was recently accepted at the Frontiers Journal.
+
 ---
 
 #### EarSiamNet: Leveraging Siamese Networks and SVM for Ear Biometric Authentication
