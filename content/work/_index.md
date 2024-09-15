@@ -4,12 +4,24 @@ title: "Work Experience and Education"
 
 ### Work Experience
 
+#### <span style="color:#2a9d8f">Research Assistant at USC Information Sciences Institute</span>
+
+**<span style="color:#e76f51">Sep 2024 - Present</span>**
+
+- Exploring Large Language Models (LLMs) and Vision-Language Models (VLMs) to analyze model behavior.
+- Formulating research questions focused on identifying and addressing biases that arise from training data or model architectures.
+- Investigating the impact of corrupted data on model performance and fairness in Vision Language Models aiming to improve robustness and reduce ethical risks.
+
+---
+
 #### <span style="color:#2a9d8f">Machine Learning Intern at Aerem</span>
 
-**<span style="color:#e76f51">Dec 2023 - Present</span>**
+**<span style="color:#e76f51">Dec 2023 - Jun 2024</span>**
 
-- Developed a multifaceted system proficient in extracting data from diverse electricity bills across India, employing vision language models and traditional OCR techniques.
-- Developed a system for detecting rooftops, assessing installation areas for solar panels, and calculating associated costs and power metrics.
+- Built a custom dataset of over 250 electricity bills from 25 providers across India by scraping web data using Beautiful Soup,and managed and stored the dataset in Firebase Storage, improving data accessibility.
+- Developed a multilingual data extraction system by fine-tuning Vision Language Models, resulting in a 75% increase in data extraction speed and a 45% improvement in data accuracy compared to traditional OCR.
+- Designed a computer vision system using YOLO and R-CNN to optimize solar panel quality inspection by detecting anomalies such as cracks and dust accumulation.
+- Engineered an automated system for solar panel counting, enhancing installation efficiency and reducing manual errors, resulting in up to a 20% reduction in projection completion times.
 
 ---
 
