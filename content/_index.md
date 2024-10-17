@@ -9,8 +9,11 @@ Currently, I work as a Software Engineer Intern at [Aerem](https://www.aerem.co/
 
 Beyond my technical pursuits, I have a passion for music 🎹 and love discovering lesser-known artists. I often find myself watching <span style="color:red">Netflix</span> and enjoy becoming a human recommendation engine for friends and family. In my free time, I also enjoy cycling and have a knack for making delicious ramen 🍜
 
-## News
+### News
 
-### 2024
+#### 2024
 
-- **18th September**: Presented at the PyTorch Conference in San Francisco 🌉
+- **September**: Presented at the PyTorch Conference in San Francisco 🌉
+- **August**: Started working under Dr. Emilio Ferrara at the USC HUMANS Lab!!!
+- **August**: Moved to Los Angeles 🌴🌴🌴
+- **June**: Accepted to Speak at the PyTorch Conference in San Francisco 🥳🥳🥳
