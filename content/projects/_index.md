@@ -2,7 +2,6 @@
 title: "Projects"
 ---
 
-<!--
 |                                              <div align="center"><img src="/img/armdet.png" alt="ARMDET" width="400" height="400"></div>                                              |                                                                                                        <div align="center"><img src="/img/hearingus.png" alt="Hearing Us" width="400" height="400"></div>                                                                                                        |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                 **[ARMDET](https://github.com/shireenchand/ARMDET)**                                                                  |                                                                  **[Hearing Us](https://www.linkedin.com/posts/shireen-chand_signlanguage-deeplearning-crework-activity-6909181134694141952-mQFZ?utm_source=share&utm_medium=member_desktop)**                                                                   |
@@ -25,9 +24,9 @@ title: "Projects"
 | :---------------------------------------------------------------------------------------------: |
 |           **[Musillow](https://github.com/shireenchand/Musillow?tab=readme-ov-file)**           |
 |                                **Tags:** Recommendation Systems                                 |
-|                            A lightweight music recommendation system                            | -->
+|                            A lightweight music recommendation system                            |
 
-# 🚀 My Projects
+<!-- # 🚀 My Projects
 
 A collection of my work in AI, ML, and beyond. Click on a tag to filter projects!
 
@@ -78,32 +77,4 @@ A collection of my work in AI, ML, and beyond. Click on a tag to filter projects
 🔍 _Check out my [website](https://shireenchand.github.io/) or [GitHub](https://github.com/shireenchand)._
 
 ---
-
-<script>
-  function filterProjects(tag) {
-    let projects = document.querySelectorAll('.project');
-    projects.forEach(project => {
-      if (tag === 'all' || project.dataset.tags.includes(tag)) {
-        project.style.display = 'block';
-      } else {
-        project.style.display = 'none';
-      }
-    });
-  }
-</script>
-
-<style>
-  .tag-btn {
-    cursor: pointer;
-    margin: 5px;
-    padding: 8px 12px;
-    border: none;
-    background: #0078D4;
-    color: white;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  .tag-btn:hover { background: #005A9E; }
-  .project { margin: 20px 0; padding: 10px; border-bottom: 1px solid #ddd; }
-  .tag { background: #e1ecf4; padding: 4px 8px; border-radius: 5px; font-size: 12px; }
-</style>
+ -->
