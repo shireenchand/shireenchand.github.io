@@ -2,6 +2,7 @@
 title: "Projects"
 ---
 
+<!--
 |                                              <div align="center"><img src="/img/armdet.png" alt="ARMDET" width="400" height="400"></div>                                              |                                                                                                        <div align="center"><img src="/img/hearingus.png" alt="Hearing Us" width="400" height="400"></div>                                                                                                        |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                 **[ARMDET](https://github.com/shireenchand/ARMDET)**                                                                  |                                                                  **[Hearing Us](https://www.linkedin.com/posts/shireen-chand_signlanguage-deeplearning-crework-activity-6909181134694141952-mQFZ?utm_source=share&utm_medium=member_desktop)**                                                                   |
@@ -24,4 +25,85 @@ title: "Projects"
 | :---------------------------------------------------------------------------------------------: |
 |           **[Musillow](https://github.com/shireenchand/Musillow?tab=readme-ov-file)**           |
 |                                **Tags:** Recommendation Systems                                 |
-|                            A lightweight music recommendation system                            |
+|                            A lightweight music recommendation system                            | -->
+
+# 🚀 My Projects
+
+A collection of my work in AI, ML, and beyond. Click on a tag to filter projects!
+
+---
+
+### 🔍 Filter by Tags:
+
+<button class="tag-btn" onclick="filterProjects('all')">🔄 All</button>
+<button class="tag-btn" onclick="filterProjects('Computer Vision')">🖼️ Computer Vision</button>
+<button class="tag-btn" onclick="filterProjects('NLP')">📝 NLP</button>
+<button class="tag-btn" onclick="filterProjects('Generative AI')">🎨 Generative AI</button>
+<button class="tag-btn" onclick="filterProjects('Optimization')">⚡ Optimization</button>
+
+---
+
+<div class="project" data-tags="Computer Vision Deep Learning">
+  <h2>🖼️ Project Name 1</h2>
+  <img src="path/to/image1.jpg" alt="Project 1" width="400px">
+  <p><strong>Tags:</strong> <span class="tag">Computer Vision</span> <span class="tag">Deep Learning</span></p>
+  <p>📌 Brief description of the project.</p>
+  🔗 [GitHub Repo](https://github.com/) | [Demo](https://your-demo-link.com)
+</div>
+
+---
+
+<div class="project" data-tags="NLP LLM">
+  <h2>📝 Project Name 2</h2>
+  <img src="path/to/image2.jpg" alt="Project 2" width="400px">
+  <p><strong>Tags:</strong> <span class="tag">NLP</span> <span class="tag">LLM</span></p>
+  <p>📌 Brief description of the project.</p>
+  🔗 [GitHub Repo](https://github.com/) | [Demo](https://your-demo-link.com)
+</div>
+
+---
+
+<div class="project" data-tags="Generative AI Optimization">
+  <h2>🎨 Project Name 3</h2>
+  <img src="path/to/image3.jpg" alt="Project 3" width="400px">
+  <p><strong>Tags:</strong> <span class="tag">Generative AI</span> <span class="tag">Optimization</span></p>
+  <p>📌 Brief description of the project.</p>
+  🔗 [GitHub Repo](https://github.com/) | [Demo](https://your-demo-link.com)
+</div>
+
+---
+
+### 🌐 Explore More:
+
+🔍 _Check out my [website](https://shireenchand.github.io/) or [GitHub](https://github.com/shireenchand)._
+
+---
+
+<script>
+  function filterProjects(tag) {
+    let projects = document.querySelectorAll('.project');
+    projects.forEach(project => {
+      if (tag === 'all' || project.dataset.tags.includes(tag)) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+<style>
+  .tag-btn {
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #0078D4;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .tag-btn:hover { background: #005A9E; }
+  .project { margin: 20px 0; padding: 10px; border-bottom: 1px solid #ddd; }
+  .tag { background: #e1ecf4; padding: 4px 8px; border-radius: 5px; font-size: 12px; }
+</style>
