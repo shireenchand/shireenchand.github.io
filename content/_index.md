@@ -11,6 +11,10 @@ Beyond my technical pursuits, I have a passion for music 🎹 and love discoveri
 
 ### News
 
+#### 2025
+
+- **2nd June, 2024**: Joined KLA as an AI Intern
+  
 #### 2024
 
 - **18th September, 2024**: Presented at the PyTorch Conference in San Francisco 🌉
