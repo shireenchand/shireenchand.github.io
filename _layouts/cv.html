@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+{% assign page_content = content | strip %}
+{% if page_content != "" %}
+<div class="row g-5 mb-4">
+  <div class="col-md-12">
+    {{ content }}
+  </div>
+</div>
+{% endif %}
+
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-2 mb-3">Work Experience</h3>
+    <ul class="exp-list">
+      {% for job in site.data.experience %}
+      <li class="exp-item">
+        <div class="exp-header">
+          <strong class="exp-company">{{ job.company }}</strong>
+          {% if job.period %}
+          <span class="exp-period">{{ job.period }}</span>
+          {% endif %}
+        </div>
+        <div class="exp-subheader">
+          <span class="exp-role">{{ job.role }}</span>
+          {% if job.location %}
+          <span class="exp-location">{{ job.location }}</span>
+          {% endif %}
+        </div>
+        {% if job.summary %}
+        <div class="exp-desc">{{ job.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% endif %}
+        {% if job.highlights %}
+        <ul class="exp-bullets">
+          {% for bullet in job.highlights %}
+          {% if bullet.first %}
+          <li class="exp-group">
+            <div class="exp-group-header">{{ bullet.header | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+            {% if bullet.items %}
+            <ul class="exp-subbullets">
+              {% for sub in bullet.items %}
+              <li>{{ sub | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% else %}
+          <li>{{ bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="row g-5 mb-4">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-2 mb-3">Education</h3>
+    <ul class="edu-list">
+      {% for edu in site.data.education %}
+      <li class="edu-item">
+        <div class="edu-header">
+          <strong>{{ edu.degree }}</strong>
+          <span class="edu-year">{{ edu.year }}</span>
+        </div>
+        <div class="edu-school">{{ edu.school | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% if edu.details %}
+        <div class="edu-details">{{ edu.details | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

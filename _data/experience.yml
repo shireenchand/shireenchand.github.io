@@ -1,0 +1,61 @@
+- company: "KLA"
+  role: "AI Engineer, Algorithms Team"
+  location: "Milpitas, CA"
+  period: "Jun 2026 – Present"
+  highlights: 
+  - Improving model training reliability and experiment reproducibility by building standardized debugging and validation workflows.
+  - Built internal tooling to monitor, visualize, and validate data transformation pipelines, reducing downstream model errors.
+  - Optimizing model performance, generalization, and production readiness through systematic hyperparameter tuning and error analysis.
+
+
+- company: "USC Information Sciences Institute"
+  role: "Research Assistant at HUMANS Lab under Dr. Emilio Ferrara"
+  location: "Los Angeles, CA"
+  period: "Sep 2024 – May 2026"
+  highlights: 
+  - "**Cross-Axis Bias Trade-offs:** Quantified the \"No Free Lunch\" effect in AI alignment, using statistical analysis to prove that debiasing a single dimension often worsens bias in unmitigated axes."
+  - "**Post-Hoc Alignment Benchmarking:** Implemented and evaluated diverse safety interventions across 10 state-of-the-art LLMs to map multi-dimensional alignment trade-offs."
+
+- company: "KLA"
+  role: "AI Engineer Intern, Algorithms Team"
+  location: "Milpitas, CA"
+  period: "Jun 2025 – Aug 2025"
+  highlights:
+  - "**Automated Data Labeling:** Built an automated image-labeling pipeline using computer vision techniques, allowing training datasets to be generated quickly and consistently at scale."
+  - "**AI Focus Estimation:** Developed custom AI models to calculate exact wafer alignment and focus coordinates (X, Y, Z), eliminating the need to capture large stacks of images."
+  - "**Accelerated Inspection Speed:** Slashed the number of images required per inspection site from 1,000 down to just 2 (completing full focus estimation in 0.32 seconds), dramatically speeding up manufacturing workflows without sacrificing accuracy.
+"
+- company: "Aerem"
+  role: "Software Engineer Intern"
+  location: "Mumbai, India"
+  period: "Dec 2023 – Jun 2024"
+  highlights:
+  - header: "Multilingual Electricity Bill Parser"
+    items:
+      - "**Dataset Creation:** Collected and organized a custom dataset of electricity bills from over 25 regional providers across India to support diverse document layouts."
+      - "**AI Document Extraction:** Built an automated, multilingual bill-reading system using Vision-Language AI, increasing processing speed by 75% and accuracy by 45% compared to standard text-recognition tools."
+  - header: "Automated Solar Panel Inspection"
+    items:
+      - "**Defect Detection & Monitoring:** Created a computer vision tool to automatically spot solar panel damage—such as cracks and dust buildup—paired with a cloud dashboard for live monitoring."
+      - "**Automated Panel Counting:** Built an automated counting tool to streamline solar installations, reducing manual errors and cutting project completion times by up to 20%."
+
+- company: "UnifyAI (Ivy)"
+  role: "Google Summer of Code Contributor"
+  period: "May 2023 - Sep 2023"
+  highlights:
+  - "**Cross-Framework Model Development:** Built, trained, and optimized machine learning models within the Ivy framework, ensuring seamless compatibility across major AI tools like PyTorch, TensorFlow, and JAX."
+  - "**Developer Tutorials & Real-World Demos:** Created user-friendly guides and interactive notebooks showcasing practical, real-world use cases to help developers easily adopt and understand the models."
+
+- company: "Enord"
+  role: "Computer Vision Intern"
+  period: "Dec 2022 - May 2023"
+  highlights:
+  - "**Hybrid Model Design:** Researched and combined top-performing 3D stereo vision models into a custom hybrid architecture designed for high accuracy and speed."
+  - "**Speed & Memory Optimization:** Benchmarked and converted the vision models into TensorRT format, significantly reducing memory usage and boosting frame rates (FPS) for real-time performance."
+
+- company: "Omdena"
+  role: "Data Scientist Contributor"
+  period: "Jul 2022 - Sep 2022"
+  highlights:
+  - "**Explainable Loan Eligibility:** Built a fair, transparent credit-scoring algorithm to help banks evaluate farmer loan applications while providing actionable feedback on how applicants can improve their eligibility."
+  - "**Interactive Analytics Dashboard:** Designed a user-friendly dashboard for lenders to easily visualize, monitor, and interpret credit-scoring results."

@@ -1,0 +1,26 @@
+menu:
+- {name: 'Home', url: "/"}
+- {name: 'Publications', url: '/publications'}
+- {name: 'CV', url: '/cv'}
+
+people: []
+
+courses: []
+
+social: []
+
+contacts: []
+
+profile_links:
+  - name: "Email"
+    url: "mailto:shireen.chand@kla.com"
+    icon: "fas fa-envelope"
+  - name: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=uBv9lpgAAAAJ&hl=en"
+    icon: "fas fa-graduation-cap"
+  - name: "GitHub"
+    url: "https://github.com/shireenchand"
+    icon: "fab fa-github"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/shireen-chand/"
+    icon: "fab fa-linkedin"

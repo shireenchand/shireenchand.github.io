@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div class="row g-4 flex-column-reverse flex-md-row">
+  <!-- Main Column: About Me, Updates, Education stacked tightly -->
+  <div class="col-md-8">
+    <section class="home-about mb-4">
+      <h2 class="fw-bold mb-3">About Me</h2>
+      {{ content }}
+    </section>
+
+    <section class="mb-4">
+      <h3 class="fw-bold border-bottom pb-2 mb-3">News</h3>
+      <ul class="news-list">
+        {% for item in site.data.news %}
+        <li class="news-item">
+          <span class="news-date">{{ item.date }}</span>
+          <span class="news-sep">-</span>
+          <span class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="fw-bold border-bottom pb-2 mb-3">Education</h3>
+      <ul class="edu-list">
+        {% for edu in site.data.education %}
+        <li class="edu-item">
+          <div class="edu-header">
+            <strong>{{ edu.degree }}</strong>
+            <span class="edu-year">{{ edu.year }}</span>
+          </div>
+          <div class="edu-school">{{ edu.school | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% if edu.details %}
+          <div class="edu-details">{{ edu.details | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+
+  <!-- Side Column: Smaller Photo + Important Links -->
+  <div class="col-md-4">
+    <div class="home-sidebar">
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="{{ site.title }}" class="profile-photo">
+      <div class="profile-name">{{ site.title }}</div>
+      <div class="profile-tagline">AI Engineer · California</div>
+      {% if site.data.settings.profile_links %}
+      <ul class="profile-links">
+        {% for link in site.data.settings.profile_links %}
+        <li>
+          {% if link.icon %}
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+          {% endif %}
+          {% if link.url contains 'http' or link.url contains 'mailto:' %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>
+          {% else %}
+          <a href="{{ link.url | relative_url }}">{{ link.name }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>

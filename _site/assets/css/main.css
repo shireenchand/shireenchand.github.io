@@ -1,0 +1,304 @@
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body a {
+  color: #1d70b8;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(29, 112, 184, 0.55);
+}
+body a:hover {
+  color: #144e81;
+  text-decoration-color: #144e81;
+}
+
+header a,
+footer a {
+  color: #212529;
+  text-decoration: none;
+}
+header a:hover,
+footer a:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.news-date {
+  min-width: 125px;
+  font-weight: 600;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.news-sep {
+  color: #888;
+  flex-shrink: 0;
+}
+
+.news-text {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 576px) {
+  .news-item {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .news-date {
+    min-width: auto;
+  }
+}
+.edu-list,
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-item,
+.exp-item {
+  margin-bottom: 1.35rem;
+  line-height: 1.5;
+}
+.edu-item:last-child,
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-header,
+.exp-header,
+.exp-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 100%;
+  gap: 1rem;
+}
+
+.exp-subheader {
+  margin-top: 0.1rem;
+}
+
+.exp-company {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #000000;
+}
+
+.exp-group {
+  margin-top: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+.exp-group:first-child {
+  margin-top: 0;
+}
+.exp-group:last-child {
+  margin-bottom: 0;
+}
+
+.exp-group-header {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+
+.exp-subbullets {
+  list-style: circle;
+  padding-left: 1.15rem;
+  margin: 0;
+}
+.exp-subbullets li {
+  margin-bottom: 0.25rem;
+}
+
+.edu-year,
+.exp-period,
+.exp-location {
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+  font-size: 0.92em;
+  flex-shrink: 0;
+}
+
+.edu-school {
+  color: #333;
+  margin-top: 0.1rem;
+}
+
+.exp-role {
+  color: #333;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.edu-details,
+.exp-desc {
+  color: #555;
+  font-size: 0.94em;
+  margin-top: 0.25rem;
+}
+
+.exp-bullets {
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+  padding-left: 1.15rem;
+  color: #555;
+  font-size: 0.94em;
+}
+.exp-bullets li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .edu-header,
+  .exp-header,
+  .exp-subheader {
+    flex-wrap: wrap;
+    gap: 0.15rem 1rem;
+  }
+  .edu-year,
+  .exp-period,
+  .exp-location {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-item {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.pub-authors {
+  color: #333;
+  margin-top: 0.15rem;
+}
+
+.pub-venue {
+  color: #555;
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+.pub-desc {
+  color: #555;
+  font-size: 0.95em;
+  margin-top: 0.2rem;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.4rem;
+}
+.pub-links a {
+  font-size: 0.82rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid #1d70b8;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #1d70b8;
+}
+.pub-links a:hover {
+  background-color: #1d70b8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home-about p:last-child {
+  margin-bottom: 0;
+}
+
+.home-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 185px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.profile-tagline {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.profile-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.profile-links li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.45rem;
+}
+.profile-links i,
+.profile-links svg {
+  width: 1.4rem !important;
+  min-width: 1.4rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.95em;
+  flex-shrink: 0;
+}
+.profile-links a {
+  color: #212529;
+  text-decoration: none;
+}
+.profile-links a:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
+}
+
+/*# sourceMappingURL=main.css.map */
